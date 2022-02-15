@@ -1,4 +1,3 @@
-import { PARTNERS } from '../shared/partners';
 import * as ActionTypes from './ActionTypes';
 
 export const Partners = (state = { 
@@ -15,6 +14,7 @@ switch (action.type) {
 
     case ActionTypes.PARTNERS_FAILED:
         return {...state, isLoading: false, errMess: action.payload};
+        
     default:
         return state;
     }
